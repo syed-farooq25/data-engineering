@@ -1,6 +1,10 @@
 import requests
 import pymysql
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 # This URL asks for Bangalore's current weather - no signup needed
 url = "https://api.open-meteo.com/v1/forecast?latitude=12.97&longitude=77.59&current_weather=true"
 
@@ -24,7 +28,7 @@ connection = pymysql.connect(
     host="127.0.0.1",
     port=3306,
     user="root",
-    password="",   
+    password=os.environ.get("DB_PASSWORD"),
     database="de_practice"
 )
 
