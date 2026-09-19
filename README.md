@@ -1,6 +1,6 @@
-# Weather & Loan Data ETL Practice :
+## Weather Data ETL Practice :
 
-Small ETL (Extract, Transform, Load) scripts built while learning data engineering fundamentals.
+Small ETL (Extract, Transform, Load) project pulling live weather data from a public API, cleaning it, and loading it into MySQL — built while learning data engineering fundamentals.
 
 ## Whats here :
 - `fetch_weather.py` — pulls live weather data from a public API, cleans it, and stores it in MySQL
